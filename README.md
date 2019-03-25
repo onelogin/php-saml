@@ -417,6 +417,20 @@ $settings = array (
         //          0 => '<cert2-string>',
         //      )
         // ),
+	
+	/*
+         * You can optional set a scoping. Scoping allows a service provider to specify a list of identity
+         * providers in an authnRequest to a proxying identity provider. This is an indication to the
+         * proxying identity provider, that the service will only deal with the identity providers specified.
+         */
+        //'scoping' => [
+        //    // Specifies the number of proxying indirections permissible.
+        //    'proxyCount' => 2,
+        //    // The list of entityIDs for identity providers that are relevant for a service provider in an authnRequest.
+        //    'idpList' => ['entityId'],
+        //    // To allow an identity provider to identify the original requester
+        //    'requesterId' => 'requesterId.nl',
+        //],
     ),
 );
 ```
